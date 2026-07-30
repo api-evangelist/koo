@@ -1,22 +1,64 @@
 aid: koo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/koo.png
 name: Koo
-description: 'Koo is a company surfaced as a portfolio company of accel, tiger-global and added to the
-  API Evangelist network as a stub for enrichment. Sector: social. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'Koo was an Indian microblogging and social networking platform built by Bombinate
+  Technologies, positioned as a multilingual, India-first alternative to Twitter/X with support for
+  Hindi, Kannada, Tamil, Telugu, Marathi and other regional languages. Backed by Accel and Tiger
+  Global, it grew during the 2021 Indian social-media policy disputes before ceasing operations in
+  2024 after funding and acquisition talks fell through. Koo never published a public developer
+  portal, API documentation, or client SDKs, and its domain no longer serves a site — this profile is
+  retained as a verified-defunct historical record rather than an active API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/koo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - accel
 - tiger-global
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: defunct
+x-tier-reason: >-
+  Company ceased operations; domain is parked and no public API surface was ever published.
+  Enrichment pipeline verified this on 2026-07-19 and produced no API artifacts by design.
+x-status: defunct
+x-verification:
+  probed: '2026-07-19'
+  findings:
+  - 'https://www.kooapp.com/ and https://kooapp.com/ return HTTP 404 serving a Wix
+    "ConnectYourDomain Error" placeholder — the domain resolves to Wix nameservers
+    (ns2/ns3.wixdns.net) but no site is connected.'
+  - 'No developer, docs, or api subdomain resolves (developers./docs./api.kooapp.com all fail
+    to connect), and none appears anywhere in the Wayback Web Archive index across ~50,000
+    archived kooapp.com URLs — only www.kooapp.com and the apex were ever captured.'
+  - 'All five probed /.well-known/ paths return 404 (see well-known/koo-well-known.yml).'
+  - 'GitHub org koo-app exists but has 0 public repositories. Parent-company org bombinatetech
+    has 16 public repositories, all forks of general-purpose open source libraries (tus/tusd
+    resumable upload, Elixir tooling, mobile UI components) — no Koo API, SDK, or client library.'
+  - 'No packages matching Koo on npm; no first-party SDK found on any package registry.'
+  - 'Last Wayback capture of a live Koo site is dated 2024-10-30.'
+  conclusion: >-
+    No API, no developer portal, no SDKs, no event surface. No API artifacts were generated,
+    as fabricating them would misrepresent a company that never had a public API program.
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Social
+- Social Networking
+- Microblogging
+- India
+- Consumer
+- Defunct
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +66,14 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/koo-domain-security.yml
 - type: Website
   url: https://www.kooapp.com/
+  x-status: parked
+  x-http-status: 404
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
