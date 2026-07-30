@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: probed
+source: live HTTPS probes of https://www.kooapp.com/.well-known/*
+summary: >-
+  No .well-known documents are published. The host answers every path with 404
+  because kooapp.com no longer serves a site — DNS is delegated to Wix
+  nameservers and the origin returns a Wix "ConnectYourDomain Error" placeholder.
+host: www.kooapp.com
+paths:
+- path: /.well-known/security.txt
+  status: 404
+  file: null
+- path: /.well-known/openid-configuration
+  status: 404
+  file: null
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  file: null
+- path: /.well-known/api-catalog
+  status: 404
+  file: null
+- path: /.well-known/ai-plugin.json
+  status: 404
+  file: null
+found: 0
