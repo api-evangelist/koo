@@ -48,7 +48,7 @@ x-verification:
   conclusion: >-
     No API, no developer portal, no SDKs, no event surface. No API artifacts were generated,
     as fabricating them would misrepresent a company that never had a public API program.
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-19'
 tags:
