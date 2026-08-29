@@ -31,6 +31,9 @@ description: 'Koo was an Indian microblogging and social networking platform bui
   portal, API documentation, or client SDKs, and its domain no longer serves a site — this profile is
   retained as a verified-defunct historical record rather than an active API provider.'
 url: https://raw.githubusercontent.com/api-evangelist/koo/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Company ceased operations; domain is parked and no public API surface was ever published."
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
