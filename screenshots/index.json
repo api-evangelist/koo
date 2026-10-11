@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "koo",
+    "captured_at": "2026-10-11T190249",
+    "source_url": "https://www.kooapp.com/",
+    "source_type": "Website",
+    "file": "koo-2026-10-11T190249.png",
+    "bytes": 50292,
+    "capture": "playwright-local"
+  }
+]
