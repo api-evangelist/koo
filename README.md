@@ -64,16 +64,44 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Koo was an Indian microblogging and social networking platform built by Bombinate Technologies — a multilingual, India-first alternative to Twitter/X supporting Hindi, Kannada, Tamil, Telugu, Marathi and other regional languages. Backed by Accel and Tiger Global, it ceased operations in 2024.
+> **No longer operating.** This company or product has shut down, been discontinued, or been deprecated. This profile is kept as a historical record and is not maintained or rated.
 
-**Status: defunct.** The enrichment pipeline verified this on 2026-07-19:
+Koo was an Indian microblogging and social networking platform built by Bombinate Technologies, positioned as a multilingual, India-first alternative to Twitter/X with support for Hindi, Kannada, Tamil, Telugu, Marathi and other regional languages. Backed by Accel and Tiger Global, it grew during the 2021 Indian social-media policy disputes before ceasing operations in 2024 after funding and acquisition talks fell through. Koo never published a public developer portal, API documentation, or client SDKs, and its domain no longer serves a site — this profile is retained as a verified-defunct historical record rather than an active API provider.
 
-- `kooapp.com` and `www.kooapp.com` return HTTP 404 — the domain is parked on Wix nameservers with no site connected.
-- No `developers.`, `docs.`, or `api.` subdomain resolves, and none was ever captured in the Wayback Machine across ~50,000 archived `kooapp.com` URLs.
-- All probed `/.well-known/` paths return 404 (see `well-known/koo-well-known.yml`).
-- The `koo-app` GitHub org has no public repositories; parent org `bombinatetech` holds only forks of general-purpose open source libraries — no Koo API, SDK, or client library.
-- No first-party packages found on any registry.
+**Areas:** Company · Social · Social Network · Microblogging · India · Consumer · Defunct
 
-Koo never published a public API program, so no API artifacts were generated — fabricating them would misrepresent the company. This repo is retained as a historical record. Domain-level probe data lives in `security/koo-domain-security.yml`.
+## Koo on APIs.io (historical record)
 
-Backed by: accel, tiger-global — https://www.kooapp.com/ (parked)
+Everything profiled for Koo is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/koo/](https://apis.io/providers/koo/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Koo Domain Security](https://apis.io/security/koo/koo-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.kooapp.com/)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as no longer operating, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Koo: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/koo/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
